@@ -23,5 +23,10 @@ class Random(commands.Cog):
     )
     async def choose(self, ctx):
         online_members = self.get_online_members(ctx)
-        random_member = random.choice(online_members)
-        await ctx.send(f"I choose {random_member.name}!")
+        if online_members:
+            random_member = random.choice(online_members)
+            await ctx.send(f"I choose {random_member.name}!")
+        else:
+            await ctx.send(
+                "I don't understand how this could be possible, but no one is online..."
+            )
