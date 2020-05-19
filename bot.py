@@ -1,7 +1,7 @@
 from discord.ext.commands import Bot
 
 from mockingbird.random import Random
-from mockingbird.settings import BOT_TOKEN, BOT_COMMAND_PREFIX, BOT_DESCRIPTION
+from mockingbird.settings import BOT_COMMAND_PREFIX, BOT_DESCRIPTION, BOT_TOKEN
 
 bot = Bot(command_prefix=BOT_COMMAND_PREFIX, description=BOT_DESCRIPTION)
 
