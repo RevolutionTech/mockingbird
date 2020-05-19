@@ -2,7 +2,6 @@ import os
 
 from dotenv import load_dotenv
 
-
 load_dotenv()
 try:
     BOT_TOKEN = os.environ["MOCKINGBIRD_BOT_TOKEN"]
