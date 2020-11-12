@@ -13,5 +13,5 @@ except KeyError:
 
 BOT_COMMAND_PREFIX = "!mb "
 BOT_DESCRIPTION = (
-    "Bot that selects random players and divides players into random teams."
+    "Bot that provides random values for games, such as selecting random players and divides players into random teams."
 )

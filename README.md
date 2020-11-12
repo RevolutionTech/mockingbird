@@ -1,5 +1,5 @@
 # Mockingbird
-#### Discord chat bot that selects random players and divides players into random teams
+#### Discord chat bot that provides random values for games
 
 ## Setup
 
