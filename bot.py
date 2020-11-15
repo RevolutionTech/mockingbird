@@ -1,10 +1,14 @@
+import discord
 from discord.ext.commands import Bot
 
 from mockingbird.decrypto import Decrypto
 from mockingbird.random import Random
 from mockingbird.settings import BOT_COMMAND_PREFIX, BOT_DESCRIPTION, BOT_TOKEN
 
-bot = Bot(command_prefix=BOT_COMMAND_PREFIX, description=BOT_DESCRIPTION)
+intents = discord.Intents.default()
+intents.presences = True
+intents.members = True
+bot = Bot(command_prefix=BOT_COMMAND_PREFIX, description=BOT_DESCRIPTION, intents=intents)
 
 
 if __name__ == "__main__":
